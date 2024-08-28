@@ -6,17 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F3C526BD2C7F34EA007E4644 /* GoidaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C526BC2C7F34EA007E4644 /* GoidaApp.swift */; };
+		F3C526BF2C7F34EB007E4644 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C526BE2C7F34EB007E4644 /* ContentView.swift */; };
+		F3C526C12C7F34EB007E4644 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3C526C02C7F34EB007E4644 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F3C526B92C7F34EA007E4644 /* Goida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goida.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3C526BC2C7F34EA007E4644 /* GoidaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoidaApp.swift; sourceTree = "<group>"; };
+		F3C526BE2C7F34EB007E4644 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F3C526C02C7F34EB007E4644 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3C526C22C7F34EB007E4644 /* Goida.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Goida.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F3C526BB2C7F34EA007E4644 /* Goida */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Goida;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F3C526B62C7F34EA007E4644 /* Frameworks */ = {
@@ -32,7 +34,7 @@
 		F3C526B02C7F34EA007E4644 = {
 			isa = PBXGroup;
 			children = (
-				F3C526BB2C7F34EA007E4644 /* Goida */,
+				F3C526CB2C7F3504007E4644 /* Goida */,
 				F3C526BA2C7F34EA007E4644 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +45,17 @@
 				F3C526B92C7F34EA007E4644 /* Goida.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F3C526CB2C7F3504007E4644 /* Goida */ = {
+			isa = PBXGroup;
+			children = (
+				F3C526BC2C7F34EA007E4644 /* GoidaApp.swift */,
+				F3C526BE2C7F34EB007E4644 /* ContentView.swift */,
+				F3C526C02C7F34EB007E4644 /* Assets.xcassets */,
+				F3C526C22C7F34EB007E4644 /* Goida.entitlements */,
+			);
+			path = Goida;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +72,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				F3C526BB2C7F34EA007E4644 /* Goida */,
 			);
 			name = Goida;
 			packageProductDependencies = (
@@ -109,6 +119,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3C526C12C7F34EB007E4644 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +130,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3C526BF2C7F34EB007E4644 /* ContentView.swift in Sources */,
+				F3C526BD2C7F34EA007E4644 /* GoidaApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +260,6 @@
 				CODE_SIGN_ENTITLEMENTS = Goida/Goida.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Goida/Preview Content\"";
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -286,7 +298,6 @@
 				CODE_SIGN_ENTITLEMENTS = Goida/Goida.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Goida/Preview Content\"";
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
