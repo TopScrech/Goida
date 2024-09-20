@@ -1,14 +1,30 @@
 import Foundation
 
 @Observable
-final class ScheduleVM {
+final class GroupVM {
     // https://dec.mgutm.ru/webapp/#/Rasp/List
     
-    var groups: [Group] = []
+    var searchPrompt = ""
     var rasp: [Datum] = []
+    
+    private var groups: [Group] = []
     
     init() {
         fetchGroupList()
+    }
+    
+    var filteredGroups: [Group] {
+        let prompt = searchPrompt.lowercased()
+        
+        if searchPrompt.isEmpty {
+            return groups
+        } else {
+            return groups.filter {
+                $0.kurs.description.contains(prompt) ||
+                $0.name.lowercased().contains(prompt) ||
+                $0.facul.lowercased().contains(prompt)
+            }
+        }
     }
     
     // https://dec.mgutm.ru/api/Rasp?idGroup=29179&sdate=2024-09-07

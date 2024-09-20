@@ -7,21 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F36F7FB52C9E330E0007F120 /* New Group View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F7FB42C9E330E0007F120 /* New Group View.swift */; };
 		F385DCB22C9E26E50008AD02 /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385DCB12C9E26E50008AD02 /* App Container.swift */; };
-		F385DCB52C9E27370008AD02 /* Schedule VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385DCB42C9E27370008AD02 /* Schedule VM.swift */; };
+		F385DCB52C9E27370008AD02 /* Group VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385DCB42C9E27370008AD02 /* Group VM.swift */; };
 		F385DCB72C9E27CF0008AD02 /* Schedule Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385DCB62C9E27CF0008AD02 /* Schedule Model.swift */; };
 		F385DCBA2C9E2B9D0008AD02 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F385DCB92C9E2B9D0008AD02 /* ScrechKit */; };
 		F385DCBC2C9E2BC10008AD02 /* Group Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385DCBB2C9E2BC10008AD02 /* Group Card.swift */; };
+		F385DCBE2C9E2F980008AD02 /* Selected Group .swift in Sources */ = {isa = PBXBuildFile; fileRef = F385DCBD2C9E2F980008AD02 /* Selected Group .swift */; };
 		F3C526BD2C7F34EA007E4644 /* Goida App.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C526BC2C7F34EA007E4644 /* Goida App.swift */; };
 		F3C526BF2C7F34EB007E4644 /* Home View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C526BE2C7F34EB007E4644 /* Home View.swift */; };
 		F3C526C12C7F34EB007E4644 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3C526C02C7F34EB007E4644 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F36F7FB42C9E330E0007F120 /* New Group View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "New Group View.swift"; sourceTree = "<group>"; };
 		F385DCB12C9E26E50008AD02 /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
-		F385DCB42C9E27370008AD02 /* Schedule VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule VM.swift"; sourceTree = "<group>"; };
+		F385DCB42C9E27370008AD02 /* Group VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group VM.swift"; sourceTree = "<group>"; };
 		F385DCB62C9E27CF0008AD02 /* Schedule Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule Model.swift"; sourceTree = "<group>"; };
 		F385DCBB2C9E2BC10008AD02 /* Group Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group Card.swift"; sourceTree = "<group>"; };
+		F385DCBD2C9E2F980008AD02 /* Selected Group .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Selected Group .swift"; sourceTree = "<group>"; };
 		F3C526B92C7F34EA007E4644 /* Goida.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goida.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3C526BC2C7F34EA007E4644 /* Goida App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Goida App.swift"; sourceTree = "<group>"; };
 		F3C526BE2C7F34EB007E4644 /* Home View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Home View.swift"; sourceTree = "<group>"; };
@@ -41,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F36F7FB62C9E33420007F120 /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				F385DCBB2C9E2BC10008AD02 /* Group Card.swift */,
+				F36F7FB42C9E330E0007F120 /* New Group View.swift */,
+				F385DCB42C9E27370008AD02 /* Group VM.swift */,
+			);
+			path = Groups;
+			sourceTree = "<group>";
+		};
 		F385DCB32C9E26F30008AD02 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,12 +84,12 @@
 			children = (
 				F3C526BC2C7F34EA007E4644 /* Goida App.swift */,
 				F385DCB32C9E26F30008AD02 /* Navigation */,
+				F385DCBD2C9E2F980008AD02 /* Selected Group .swift */,
 				F3C526C02C7F34EB007E4644 /* Assets.xcassets */,
 				F3C526C22C7F34EB007E4644 /* Goida.entitlements */,
 				F3C526BE2C7F34EB007E4644 /* Home View.swift */,
-				F385DCBB2C9E2BC10008AD02 /* Group Card.swift */,
-				F385DCB42C9E27370008AD02 /* Schedule VM.swift */,
 				F385DCB62C9E27CF0008AD02 /* Schedule Model.swift */,
+				F36F7FB62C9E33420007F120 /* Groups */,
 			);
 			path = Goida;
 			sourceTree = "<group>";
@@ -156,12 +170,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F385DCB52C9E27370008AD02 /* Schedule VM.swift in Sources */,
+				F385DCB52C9E27370008AD02 /* Group VM.swift in Sources */,
+				F36F7FB52C9E330E0007F120 /* New Group View.swift in Sources */,
 				F385DCBC2C9E2BC10008AD02 /* Group Card.swift in Sources */,
 				F3C526BF2C7F34EB007E4644 /* Home View.swift in Sources */,
 				F3C526BD2C7F34EA007E4644 /* Goida App.swift in Sources */,
 				F385DCB72C9E27CF0008AD02 /* Schedule Model.swift in Sources */,
 				F385DCB22C9E26E50008AD02 /* App Container.swift in Sources */,
+				F385DCBE2C9E2F980008AD02 /* Selected Group .swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
