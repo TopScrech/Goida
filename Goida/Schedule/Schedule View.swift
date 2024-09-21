@@ -6,29 +6,32 @@ struct ScheduleView: View {
     
     @Query(animation: .default) private var selectedGroups: [SelectedGroup]
     
-    @State private var selectedGroup = 0
+    @AppStorage("selected_group") private var selectedGroup = 0
     
     var body: some View {
         List {
-            Text("Selected group \(selectedGroup)")
-            
-            
             ForEach(vm.schedules) { schedule in
                 ScheduleCard(schedule)
             }
         }
-        .onChange(of: selectedGroup) { _, newValue in
-            print("newValue: \(newValue)")
-        }
-        .safeAreaInset(edge: .top) {
-            Picker("Selected Groups", selection: $selectedGroup) {
-                Text("No Group Selected")
-                    .tag(0)
+        .toolbar {
+            Menu {
+                Section {
+                    Button("No group selected") {
+                        selectedGroup = 0
+                    }
+                }
                 
                 ForEach(selectedGroups) { group in
-                    Text(group.name)
-                        .tag(group.id)
+                    Button {
+                        selectedGroup = group.groupId
+                    } label: {
+                        Label(group.name, systemImage: selectedGroup == group.groupId ? "checkmark" : "")
+                        Text(group.groupId)
+                    }
                 }
+            } label: {
+                Image(systemName: "ellipsis.circle")
             }
         }
     }
