@@ -5,7 +5,7 @@ final class GroupVM {
     // https://dec.mgutm.ru/webapp/#/Rasp/List
     
     var searchPrompt = ""
-    var rasp: [Datum] = []
+    var rasp: [Group] = []
     
     private var groups: [Group] = []
     
@@ -51,7 +51,7 @@ final class GroupVM {
             if let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 {
                 do {
                     let decoder = JSONDecoder()
-                    let raspList = try decoder.decode(Welcome7.self, from: data)
+                    let raspList = try decoder.decode(Welcome4.self, from: data)
                     
                     self.rasp = raspList.data
                 } catch {

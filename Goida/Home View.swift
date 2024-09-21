@@ -1,44 +1,21 @@
-import ScrechKit
-import SwiftData
+import SwiftUI
 
 struct HomeView: View {
-    @State private var vm = GroupVM()
-    
-    @Query(animation: .default) private var selectedGroups: [SelectedGroup]
-    
-    @State private var sheetNewGroup = false
+    @AppStorage("selected_tab") private var selectedTab = 0
     
     var body: some View {
-        List {
-            ForEach(selectedGroups) { group in
-                Section {
-                    VStack(alignment: .leading) {
-                        Text(group.name)
-                        Text(group.groupId)
-                    }
+        TabView(selection: $selectedTab) {
+            ScheduleView()
+                .tag(0)
+                .tabItem {
+                    Label("Scheudle", systemImage: "calendar")
                 }
-            }
             
-            Button("Add a new group") {
-                sheetNewGroup = true
-            }
-        }
-        .sheet($sheetNewGroup) {
-            NavigationView {
-                NewGroupView($sheetNewGroup)
-            }
-        }
-        .overlay {
-            if selectedGroups.isEmpty {
-                ContentUnavailableView {
-                    Label("You have no groups yet", systemImage: "pc")
-                } actions: {
-                    Button("Add a new group") {
-                        sheetNewGroup = true
-                    }
-                    .foregroundStyle(.green)
+            GroupList()
+                .tag(1)
+                .tabItem {
+                    Label("Groups", systemImage: "graduationcap")
                 }
-            }
         }
     }
 }
