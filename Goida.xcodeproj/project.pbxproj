@@ -13,6 +13,7 @@
 		F36F7FBC2C9F1D020007F120 /* Schedule View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F7FBB2C9F1D020007F120 /* Schedule View.swift */; };
 		F36F7FBF2C9F1E530007F120 /* Schedule VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F7FBE2C9F1E530007F120 /* Schedule VM.swift */; };
 		F36F7FC12C9F1E800007F120 /* Schedule Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F7FC02C9F1E800007F120 /* Schedule Model.swift */; };
+		F36F7FC32C9F1EF70007F120 /* Schedule Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36F7FC22C9F1EF70007F120 /* Schedule Card.swift */; };
 		F385DCB22C9E26E50008AD02 /* App Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385DCB12C9E26E50008AD02 /* App Container.swift */; };
 		F385DCB52C9E27370008AD02 /* Group VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385DCB42C9E27370008AD02 /* Group VM.swift */; };
 		F385DCB72C9E27CF0008AD02 /* Group Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F385DCB62C9E27CF0008AD02 /* Group Model.swift */; };
@@ -31,6 +32,7 @@
 		F36F7FBB2C9F1D020007F120 /* Schedule View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule View.swift"; sourceTree = "<group>"; };
 		F36F7FBE2C9F1E530007F120 /* Schedule VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule VM.swift"; sourceTree = "<group>"; };
 		F36F7FC02C9F1E800007F120 /* Schedule Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule Model.swift"; sourceTree = "<group>"; };
+		F36F7FC22C9F1EF70007F120 /* Schedule Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule Card.swift"; sourceTree = "<group>"; };
 		F385DCB12C9E26E50008AD02 /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F385DCB42C9E27370008AD02 /* Group VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group VM.swift"; sourceTree = "<group>"; };
 		F385DCB62C9E27CF0008AD02 /* Group Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group Model.swift"; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				F36F7FBB2C9F1D020007F120 /* Schedule View.swift */,
+				F36F7FC22C9F1EF70007F120 /* Schedule Card.swift */,
 				F36F7FBE2C9F1E530007F120 /* Schedule VM.swift */,
 				F36F7FC02C9F1E800007F120 /* Schedule Model.swift */,
 			);
@@ -197,6 +200,7 @@
 				F385DCB52C9E27370008AD02 /* Group VM.swift in Sources */,
 				F36F7FBC2C9F1D020007F120 /* Schedule View.swift in Sources */,
 				F36F7FB52C9E330E0007F120 /* New Group View.swift in Sources */,
+				F36F7FC32C9F1EF70007F120 /* Schedule Card.swift in Sources */,
 				F385DCBC2C9E2BC10008AD02 /* New Group Card.swift in Sources */,
 				F3C526BF2C7F34EB007E4644 /* Group List.swift in Sources */,
 				F36F7FBA2C9F1C8E0007F120 /* Home View.swift in Sources */,
