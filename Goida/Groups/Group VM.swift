@@ -22,7 +22,9 @@ final class GroupVM {
             return groups.filter {
                 $0.kurs.description.contains(prompt) ||
                 $0.name.lowercased().contains(prompt) ||
-                $0.facul.lowercased().contains(prompt)
+                $0.facul.lowercased().contains(prompt) ||
+                $0.id.description.contains(prompt) ||
+                $0.facultyID.description.contains(prompt)
             }
         }
     }

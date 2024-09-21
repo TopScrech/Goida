@@ -12,16 +12,20 @@ struct HomeView: View {
         List {
             ForEach(selectedGroups) { group in
                 Section {
-                    VStack {
+                    VStack(alignment: .leading) {
                         Text(group.name)
                         Text(group.groupId)
                     }
                 }
-            }            
+            }
+            
+            Button("Add a new group") {
+                sheetNewGroup = true
+            }
         }
         .sheet($sheetNewGroup) {
             NavigationView {
-                NewGroupView()
+                NewGroupView($sheetNewGroup)
             }
         }
         .overlay {

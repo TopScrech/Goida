@@ -4,7 +4,7 @@ struct Welcome4: Decodable {
     let msg: String
 }
 
-struct Group: Decodable, Identifiable {
+struct Group: Decodable, Identifiable, Equatable {
     let name: String
     let id: Int
     let kurs: Int

@@ -7,15 +7,40 @@ struct GroupCard: View {
         self.group = group
     }
     
+    @State private var showAlert = false
+    @State private var name = ""
+    
     var body: some View {
         Section {
-            VStack(alignment: .leading) {
-                Text(group.name)
-                Text(group.id)
-                Text(group.facul)
-                Text(group.yearName)
-                Text(group.facultyID)
-                Text(group.kurs)
+            HStack(spacing: 16) {
+                Image(systemName: "graduationcap.fill")
+                    .title()
+                    .foregroundStyle(.teal)
+                
+                VStack(alignment: .leading) {
+                    HStack(alignment: .bottom) {
+                        Text("Group: \(group.name)")
+                        
+                        Text(group.id)
+                            .footnote()
+                            .foregroundStyle(.secondary)
+                    }
+                    
+                    HStack(alignment: .bottom) {
+                        Text("Faculty: \(group.facul)")
+                        
+                        Text(group.facultyID)
+                            .footnote()
+                            .foregroundStyle(.secondary)
+                    }
+                    
+                    Text("Kurs: \(group.kurs)")
+                }
+                
+                //                Image(images.randomElement()!)
+                //                    .resizable()
+                //                    .frame(width: 200, height: 100)
+                //                    .clipShape(.rect(cornerRadius: 16))
             }
         }
     }
