@@ -33,6 +33,7 @@
 		F36F7FBE2C9F1E530007F120 /* Schedule VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule VM.swift"; sourceTree = "<group>"; };
 		F36F7FC02C9F1E800007F120 /* Schedule Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule Model.swift"; sourceTree = "<group>"; };
 		F36F7FC22C9F1EF70007F120 /* Schedule Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Schedule Card.swift"; sourceTree = "<group>"; };
+		F36F7FC42C9F215C0007F120 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		F385DCB12C9E26E50008AD02 /* App Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Container.swift"; sourceTree = "<group>"; };
 		F385DCB42C9E27370008AD02 /* Group VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group VM.swift"; sourceTree = "<group>"; };
 		F385DCB62C9E27CF0008AD02 /* Group Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Group Model.swift"; sourceTree = "<group>"; };
@@ -106,6 +107,7 @@
 		F3C526CB2C7F3504007E4644 /* Goida */ = {
 			isa = PBXGroup;
 			children = (
+				F36F7FC42C9F215C0007F120 /* Info.plist */,
 				F3C526BC2C7F34EA007E4644 /* Goida App.swift */,
 				F385DCB32C9E26F30008AD02 /* Navigation */,
 				F385DCBD2C9E2F980008AD02 /* Selected Group .swift */,
@@ -342,6 +344,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Goida/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Goida;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -361,7 +364,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.topscrech.Goida;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
@@ -381,6 +385,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Goida/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Goida;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -400,7 +405,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dev.topscrech.Goida;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2,7";
