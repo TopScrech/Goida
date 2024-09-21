@@ -15,10 +15,8 @@ struct NewGroupView: View {
         List {
             Text("Found \(vm.filteredGroups.count) groups")
             
-            Section("Found \(vm.filteredGroups.count) groups") {
-                ForEach(vm.filteredGroups) { group in
-                    NewGroupCard($sheetNewGroup, group)
-                }
+            ForEach(vm.filteredGroups) { group in
+                NewGroupCard($sheetNewGroup, group)
             }
         }
         .animation(.default, value: vm.filteredGroups)
