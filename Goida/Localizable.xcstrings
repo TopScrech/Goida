@@ -102,7 +102,14 @@
 
     },
     "No group selected" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Группа не выбрана"
+          }
+        }
+      }
     },
     "Scheudle" : {
       "localizations" : {

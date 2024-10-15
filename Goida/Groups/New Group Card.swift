@@ -75,5 +75,5 @@ struct NewGroupCard: View {
 }
 
 //#Preview {
-//
+//    NewGroupCard()
 //}
