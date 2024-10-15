@@ -4,11 +4,7 @@ import Foundation
 final class ScheduleVM {
     var schedules: [Schedule] = []
     
-    init() {
-        fetchSchedules()
-    }
-    
-    func fetchSchedules() {
+    func fetchSchedules(_ id: String) {
         
     }
 }

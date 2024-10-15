@@ -27,6 +27,7 @@ struct ScheduleView: View {
                         selectedGroup = group.groupId
                     } label: {
                         Label(group.name, systemImage: selectedGroup == group.groupId ? "checkmark" : "")
+                        
                         Text(group.groupId)
                     }
                 }
