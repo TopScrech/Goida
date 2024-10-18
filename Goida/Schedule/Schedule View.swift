@@ -10,6 +10,20 @@ struct ScheduleView: View {
     
     var body: some View {
         List {
+            Section {
+                if let group = selectedGroups.first(where: {
+                    $0.groupId == selectedGroup
+                }) {
+                    VStack(alignment: .leading) {
+                        Text(group.name)
+                        
+                        Text(group.groupId)
+                            .secondary()
+                            .footnote()
+                    }
+                }
+            }
+            
             ForEach(vm.schedules) { schedule in
                 ScheduleCard(schedule)
             }

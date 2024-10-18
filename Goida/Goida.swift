@@ -2,7 +2,7 @@ import SwiftUI
 import SwiftData
 
 @main
-struct GoidaApp: App {
+struct Goida: App {
     private let container: ModelContainer
     
     init() {

@@ -14,7 +14,10 @@ struct GroupList: View {
                 Section {
                     VStack(alignment: .leading) {
                         Text(group.name)
+                        
                         Text(group.groupId)
+                            .secondary()
+                            .footnote()
                     }
                 }
             }
