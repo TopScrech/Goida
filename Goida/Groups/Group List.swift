@@ -11,19 +11,19 @@ struct GroupList: View {
     var body: some View {
         List {
             ForEach(selectedGroups) { group in
-                Section {
-                    VStack(alignment: .leading) {
-                        Text(group.name)
-                        
-                        Text(group.groupId)
-                            .secondary()
-                            .footnote()
-                    }
+                VStack(alignment: .leading) {
+                    Text(group.name)
+                    
+                    Text(group.groupId)
+                        .secondary()
+                        .footnote()
                 }
             }
             
-            Button("Add a new group") {
-                sheetNewGroup = true
+            Section {
+                Button("Add a new group") {
+                    sheetNewGroup = true
+                }
             }
         }
         .sheet($sheetNewGroup) {
